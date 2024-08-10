@@ -7,7 +7,7 @@ const { poseidon1, poseidon2 } = require('poseidon-lite');
 const { ethers } = require("hardhat");
 
 
-let ROUNDS = 3;
+let ROUNDS = 10;
 
 
 const dataDir = path.join(__dirname, 'data');

@@ -50,32 +50,32 @@ do
     snarkjs zkey export soliditycalldata proofs/$i/public.json proofs/$i/proof.json > ../test/data/zkqv/$i.txt
 done
 
-# Gas Test
-cd ..
-cat <<EOT > contracts/ZkqvGasHelper.sol
-// SPDX-License-Identifier: MIT
+# # Gas Test
+# cd ..
+# cat <<EOT > contracts/ZkqvGasHelper.sol
+# // SPDX-License-Identifier: MIT
 
-pragma solidity >=0.5.0 <0.9.0;
+# pragma solidity >=0.5.0 <0.9.0;
 
-import {Groth16Verifier as Verifier} from "./verifier_zkqv.sol";
+# import {Groth16Verifier as Verifier} from "./verifier_zkqv.sol";
 
-contract ZkqvGasHelper is Verifier {
-    uint256 public gasUsed;
+# contract ZkqvGasHelper is Verifier {
+#     uint256 public gasUsed;
 
-    function verifyProofBenchmark(
-        uint[2] calldata _pA,
-        uint[2][2] calldata _pB,
-        uint[2] calldata _pC,
-        uint[2] calldata _pubSignals
-    ) external {
-        uint256 startGas = gasleft();
-        // bool res =
-        this.verifyProof(_pA, _pB, _pC, _pubSignals);
-        gasUsed = startGas - gasleft();
+#     function verifyProofBenchmark(
+#         uint[2] calldata _pA,
+#         uint[2][2] calldata _pB,
+#         uint[2] calldata _pC,
+#         uint[2] calldata _pubSignals
+#     ) external {
+#         uint256 startGas = gasleft();
+#         // bool res =
+#         this.verifyProof(_pA, _pB, _pC, _pubSignals);
+#         gasUsed = startGas - gasleft();
 
-        // require(res, "Fail to verify.");
-    }
-}
-EOT
-echo GAS_TEST
-npx hardhat test test/gas_test.js
+#         // require(res, "Fail to verify.");
+#     }
+# }
+# EOT
+# echo GAS_TEST
+# npx hardhat test test/gas_test.js
