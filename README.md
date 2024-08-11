@@ -1,4 +1,15 @@
-# 🔧 ZKQv Circuit Setup and Testing
+# zkQV
+
+**zkQV** is a groundbreaking voting system designed to revolutionize blockchain governance by combining the power of Zero Knowledge Proofs (ZKP) with Quadratic Voting.
+
+We aim to create a governance system that is secure, fair, and private, fostering trust and encouraging broader participation in blockchain communities.
+
+- **Fairness:** Quadratic Voting ensures equal influence, limiting the dominance of wealthy individuals.
+- **Privacy:** Zero Knowledge Proofs protect voter anonymity, making voting both secure and private.
+
+---
+
+# 🔧 zkQV Circuit Setup and Testing
 
 This repository contains a script for setting up and testing zk-SNARKs circuits using the Hardhat framework and SnarkJS.
 
