@@ -1,4 +1,5 @@
 require("@nomicfoundation/hardhat-toolbox");
+require("@nomicfoundation/hardhat-verify");
 
 require("dotenv").config();
 
@@ -55,6 +56,44 @@ module.exports = {
       chainId: 1740,
       accounts: [process.env.PRIVATE_KEY],
     },
+  },
+
+  etherscan: {
+    apiKey: {
+      // Is not required by blockscout. Can be any non-empty string
+      'opSepolia': "abc",
+      'baseSepolia': "abc",
+      'metalTestnet': "abc"
+    },
+    customChains: [
+      {
+        network: "opSepolia",
+        chainId: 11155420,
+        urls: {
+          apiURL: "https://optimism-sepolia.blockscout.com/api",
+          browserURL: "https://optimism-sepolia.blockscout.com/",
+        }
+      },
+      {
+        network: "baseSepolia",
+        chainId: 84532,
+        urls: {
+          apiURL: "https://base-sepolia.blockscout.com/api",
+          browserURL: "https://base-sepolia.blockscout.com/",
+        }
+      },
+      {
+        network: "metalTestnet",
+        chainId: 1740,
+        urls: {
+          apiURL: "https://testnet.explorer.metall2.com/api/",
+          browserURL: "https://testnet.explorer.metall2.com/",
+        }
+      }
+    ]
+  },
+  sourcify: {
+    enabled: false
   },
 
   mocha: {
