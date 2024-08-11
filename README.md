@@ -7,6 +7,18 @@ We aim to create a governance system that is secure, fair, and private, fosterin
 - **Fairness:** Quadratic Voting ensures equal influence, limiting the dominance of wealthy individuals.
 - **Privacy:** Zero Knowledge Proofs protect voter anonymity, making voting both secure and private.
 
+## Contracts
+
+- **Optimism**: [`0x134F801e50B24728b6301E4eAF0d905aBFef20bA`](https://optimism-sepolia.blockscout.com/address/0x134F801e50B24728b6301E4eAF0d905aBFef20bA)
+- **Base**: [`0x4F6fD04df4f5C372b7B5A095e46fD908C02FC6D9`](https://base-sepolia.blockscout.com/address/0x4F6fD04df4f5C372b7B5A095e46fD908C02FC6D9)
+- **Metal L2**: [`0x9e18A4867873c9b4310cf9F786A1cd2ec7Aa09cF`](https://testnet.explorer.metall2.com/address/0x9e18A4867873c9b4310cf9F786A1cd2ec7Aa09cF)
+
+## Verify Examples
+
+- **Optimism**: [`verify`](https://optimism-sepolia.blockscout.com/tx/0xba7edc37c7f03753d4fde8c805b535b96d2334425aef35d3d039d6ee54856d50)
+- **Base**: [`verify`](https://base-sepolia.blockscout.com/tx/0x9cea0b5d6a4787ff6a77510207b133178a985dabd9ffe39ed4af79552619037d)
+- **Metal L2**: [`verify`](https://testnet.explorer.metall2.com/tx/0x88ed8dc872256192082df1edea9a6901b6e0d6498a65a7a3593981c1e24386b9)
+
 ---
 
 # 🔧 zkQV Circuit Setup and Testing
